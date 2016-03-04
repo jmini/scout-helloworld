@@ -18,6 +18,8 @@
   <name>My Scout Application Parent Module</name>
 
   <properties>
+    <maven.release.plugin.version>2.5.2</maven.release.plugin.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <com.company.example.helloworld.version>${project.version}</com.company.example.helloworld.version>
     <jdk.source.version>1.8</jdk.source.version>
     <org.eclipse.scout.rt_version>5.2.0.M5</org.eclipse.scout.rt_version>
@@ -66,4 +68,35 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+  <scm>
+    <connection>scm:git:https://github.com/jmini/scout-helloworld.git</connection>
+    <developerConnection>scm:git:git@github.com:jmini/scout-helloworld.git</developerConnection>
+    <url>https://github.com/jmini/scout-helloworld</url>
+    <tag>HEAD</tag>
+  </scm>
+  <distributionManagement>
+    <repository>
+      <id>bintray.jmini.maven</id>
+      <url>https://api.bintray.com/maven/jmini/maven/scout-helloworld</url>
+    </repository>
+  </distributionManagement>
+  <profiles>
+    <profile>
+      <id>release</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-release-plugin</artifactId>
+            <version>${maven.release.plugin.version}</version>
+            <configuration>
+              <useReleaseProfile>false</useReleaseProfile>
+              <releaseProfiles>release</releaseProfiles>
+              <autoVersionSubmodules>true</autoVersionSubmodules>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
