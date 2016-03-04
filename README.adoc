@@ -1,0 +1,16 @@
+:issues: https://github.com/jmini/scout-helloworld/issues
+:license: http://www.eclipse.org/legal/epl-v10.html
+= scout-helloworld
+This is a repository to experiment with the Eclipse Scout "Hello World".
+
+See also link:http://eclipsescout.github.io/5.2/latest/article_helloworld/scout_helloworld/scout_helloworld.html[Eclipse Scout "Hello World"]
+
+== Get in touch
+
+Ping me on twitter: link:https://twitter.com/j2r2b[@j2r2b].
+
+Use the link:{issues}[issue tracker] on GitHub.
+
+== License
+
+link:{license}[Eclipse Public License - v 1.0]
