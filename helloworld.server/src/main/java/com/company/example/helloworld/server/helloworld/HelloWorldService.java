@@ -2,14 +2,14 @@ package com.company.example.helloworld.server.helloworld;
 
 import com.company.example.helloworld.server.ServerSession;
 import com.company.example.helloworld.shared.helloworld.HelloWorldFormData;
-import com.company.example.helloworld.shared.helloworld.IHelloWorldFormService;
+import com.company.example.helloworld.shared.helloworld.IHelloWorldService;
 
 /**
- * <h3>{@link HelloWorldFormService}</h3>
+ * <h3>{@link HelloWorldService}</h3>
  *
  * @author jbr
  */
-public class HelloWorldFormService implements IHelloWorldFormService {
+public class HelloWorldService implements IHelloWorldService {
 
 	@Override
 	public HelloWorldFormData load(HelloWorldFormData input) {

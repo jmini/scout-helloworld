@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <title>My Scout Application</title>
+    <scout:base />
     <scout:include template="favicon.html" />
-	<scout:stylesheet src="res/scout-module.css" />
+    <scout:stylesheet src="res/scout-module.css" />
     <scout:script src="res/jquery-all-macro.js" />
     <scout:script src="res/scout-module.js" />
     <script>
@@ -12,9 +13,6 @@
         scout.init({
           bootstrap: {
             fonts: ['scoutIcons']
-          },
-          session: {
-            uiUseTaskbarLogo: true
           }
         })
       });
