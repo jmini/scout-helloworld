@@ -15,8 +15,19 @@
 
   <name>My Scout Application Server WAR</name>
 
+  <properties>
+    <build-timestamp>${maven.build.timestamp}</build-timestamp>
+    <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ss</maven.build.timestamp.format>
+  </properties>
+
   <build>
-      <finalName>com.company.example.helloworld.server</finalName>
+    <finalName>com.company.example.helloworld.server</finalName>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
   </build>
 
   <dependencies>
