@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.company.example</groupId>
+    <artifactId>helloworld</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
+    <relativePath>../helloworld/pom.xml</relativePath>
+  </parent>
+
+  <artifactId>helloworld.all.app.dev</artifactId>
+  <packaging>war</packaging>
+
+  <name>My Scout Application Single Server Development</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.eclipse.scout.rt</groupId>
+      <artifactId>org.eclipse.scout.dev.jetty</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.scout.rt</groupId>
+      <artifactId>org.eclipse.scout.rt.serverbridge</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.company.example</groupId>
+      <artifactId>helloworld.ui.html</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.company.example</groupId>
+      <artifactId>helloworld.server</artifactId>
+    </dependency>
+  </dependencies>
+</project>

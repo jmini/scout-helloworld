@@ -1,5 +1,7 @@
 package com.company.example.helloworld.server.helloworld;
 
+import org.eclipse.scout.rt.shared.TunnelToServer;
+
 import com.company.example.helloworld.server.ServerSession;
 import com.company.example.helloworld.shared.helloworld.HelloWorldFormData;
 import com.company.example.helloworld.shared.helloworld.IHelloWorldService;
@@ -9,6 +11,7 @@ import com.company.example.helloworld.shared.helloworld.IHelloWorldService;
  *
  * @author jbr
  */
+@TunnelToServer
 public class HelloWorldService implements IHelloWorldService {
 
 	@Override
