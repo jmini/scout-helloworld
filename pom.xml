@@ -4,11 +4,15 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.company.example</groupId>
-  <artifactId>helloworld.aggregator</artifactId>
+  <artifactId>helloworld-root</artifactId>
   <version>1.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>My Scout Application Aggregator Module</name>
+  <name>My Scout Application ROOT Module</name>
+
+  <prerequisites>
+    <maven>3.2.2</maven>
+  </prerequisites>
 
   <properties>
     <maven.release.plugin.version>2.5.2</maven.release.plugin.version>
@@ -30,6 +34,28 @@
       <url>https://api.bintray.com/maven/jmini/maven/scout-helloworld</url>
     </repository>
   </distributionManagement>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <version>2.8.2</version>
+        <inherited>false</inherited>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-install-plugin</artifactId>
+        <version>2.5.2</version>
+        <inherited>false</inherited>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
   <profiles>
     <profile>
       <id>release</id>

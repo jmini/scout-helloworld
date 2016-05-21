@@ -17,6 +17,7 @@ import org.eclipse.scout.rt.shared.TEXTS;
 import com.company.example.helloworld.client.search.SearchOutline;
 import com.company.example.helloworld.client.settings.SettingsOutline;
 import com.company.example.helloworld.client.work.WorkOutline;
+import com.company.example.helloworld.shared.Icons;
 
 /**
  * <h3>{@link Desktop}</h3>
@@ -31,7 +32,7 @@ public class Desktop extends AbstractDesktop {
 
 	@Override
 	protected String getConfiguredLogoId() {
-		return "application_logo";
+		return Icons.AppLogo;
 	}
 
 	@Override
