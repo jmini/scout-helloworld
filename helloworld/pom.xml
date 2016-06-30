@@ -21,7 +21,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <com.company.example.helloworld.version>${project.version}</com.company.example.helloworld.version>
     <jdk.source.version>1.7</jdk.source.version>
-    <org.eclipse.scout.rt_version>6.0.0.M7</org.eclipse.scout.rt_version>
+    <org.eclipse.scout.rt.version>6.0.0.RC4</org.eclipse.scout.rt.version>
   </properties>
 
   <modules>
@@ -53,7 +53,7 @@
       <dependency>
         <groupId>org.eclipse.scout.rt</groupId>
         <artifactId>org.eclipse.scout.rt</artifactId>
-        <version>${org.eclipse.scout.rt_version}</version>
+        <version>${org.eclipse.scout.rt.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>

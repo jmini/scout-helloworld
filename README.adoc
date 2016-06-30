@@ -1,16 +1,45 @@
-:issues: https://github.com/jmini/scout-helloworld/issues
+//tag::vardef[]
+:gh-repo-owner: jmini
+:gh-repo-name: scout-helloworld
+:project-name: Scout HelloWorld
+:branch: master
+:twitter-handle: j2r2b
 :license: http://www.eclipse.org/legal/epl-v10.html
-= scout-helloworld
+:license-name: Eclipse Public License - v 1.0
+
+:repository: {gh-repo-owner}/{gh-repo-name}
+:issues: https://github.com/{repository}/issues
+//end::vardef[]
+
+//tag::header[]
+= {project-name}
 This is a repository to experiment with the Eclipse Scout "Hello World".
+//end::header[]
 
-See also link:http://eclipsescout.github.io/5.2/latest/article_helloworld/scout_helloworld/scout_helloworld.html[Eclipse Scout "Hello World"]
+See the official documentation link:http://eclipsescout.github.io/6.0/beginners-guide.html#cha-helloworld["Hello World" Tutorial]
 
+The new project is created with those parameters:
+
+* Group Id: `com.company.example` 
+* Artifact Id: `helloworld` 
+* Display Name: `My Scout Application` 
+
+Addition to the result of the tutorial:
+
+* Project `helloworld.all.app.dev` to launch in the same JVM the frontend and the backend server.
+* Display the build timestamp in the info dialog
+* Some build engineering additions
+
+//tag::contact-section[]
 == Get in touch
 
-Ping me on twitter: link:https://twitter.com/j2r2b[@j2r2b].
+Use the link:{issues}[{project-name} issue tracker] on GitHub.
 
-Use the link:{issues}[issue tracker] on GitHub.
+You can also contact me on Twitter: link:https://twitter.com/{twitter-handle}[@{twitter-handle}]
+//end::contact-section[]
 
+//tag::license-section[]
 == License
 
-link:{license}[Eclipse Public License - v 1.0]
+link:{license}[{license-name}]
+//end::license-section[]

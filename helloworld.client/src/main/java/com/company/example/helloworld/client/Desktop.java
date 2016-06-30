@@ -37,8 +37,7 @@ public class Desktop extends AbstractDesktop {
 
 	@Override
 	protected List<Class<? extends IOutline>> getConfiguredOutlines() {
-		return CollectionUtility.<Class<? extends IOutline>>arrayList(WorkOutline.class, SearchOutline.class,
-				SettingsOutline.class);
+		return CollectionUtility.<Class<? extends IOutline>> arrayList(WorkOutline.class, SearchOutline.class, SettingsOutline.class);
 	}
 
 	@Override
